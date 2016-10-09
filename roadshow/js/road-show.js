@@ -6,24 +6,11 @@ $(function(){
 
     // 初始化计算总分
     caculateTotalScore();
-    
-    // 点击列表显示隐藏分数
-    $('.vote-list .item').click(function(){
-        var nextElem = $(this).next('.item-click');
-        if(nextElem.is(":visible")){
-            nextElem.slideUp();
-        }else{
-            nextElem.slideDown(); 
-        }
-    });
 
-    // 点击分数记录得分
-    $('.item-click a').click(function(){
-        // 添加active样式
-        $(this).parents('.item-click').eq(0).find('a').removeClass('active');
-        $(this).addClass('active');
+    // 分数变化
+    $('.bubble-slider-thumb span').bind('DOMNodeInserted',function(){
         // 设定item-click上的得分
-        var currentScore = $(this).data('score');
+        var currentScore = $(this).text();
         $(this).parents('.item-click').eq(0).attr('data-score',currentScore);
         // 重新计算总分
         caculateTotalScore();

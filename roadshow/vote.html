@@ -6,8 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>路演项目投票</title>
+  <link rel="stylesheet" href="css/bubble-slider.css">
   <link rel="stylesheet" href="css/sweetalert.css">
   <link rel="stylesheet" href="css/road-show.css">
+
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/jquery.bubble-slider.js"></script>
+  <script src="js/sweetalert.min.js"></script>
+  <script src="js/road-show.js"></script>
+  <script>
+    $.fn.bubbleSlider.defaults = {
+      toggleBubble: true,
+      // postfix: '分',
+      thumbScale: 1.1, // 滑块大小
+      thumbColor: '#05b1ea', // 滑块和加减号的颜色
+      thumbFontScale: 1,
+      thumbFontColor: '#fff',
+      trackScale: 1.5, // 加减号
+      trackColor: '#eee'
+    };
+  </script>
 </head>
 
 <body>
@@ -25,23 +43,9 @@
         <img src="img/arrow_down.png">
       </span>
     </a>
-    <ul class="item-click" data-score="0" data-type="技术和产品">
-      <li>
-        <a href="javascript:;" data-score="0" class="active">0分</a>
-      </li>
-      <li>
-        <a href="javascript:;" data-score="1">1分</a>
-      </li>
-      <li>
-        <a href="javascript:;" data-score="2">2分</a>
-      </li>
-      <li>
-        <a href="javascript:;" data-score="3">3分</a>
-      </li>
-      <li>
-        <a href="javascript:;" data-score="4">4分</a>
-      </li>
-    </ul>
+    <div class="item-click" data-score="0" data-type="技术和产品">
+      <input class="bubble-slider" name="score[]" type="number" min="0" max="25" value="0">
+    </div>
 
     <a href="javascript:;" class="item">
       <img src="img/grey_bg.png">
@@ -50,17 +54,9 @@
         <img src="img/arrow_down.png">
       </span>
     </a>
-    <ul class="item-click" data-score="0" data-type="商业模式和实施方案">
-      <li>
-        <a href="javascript:;" data-score="0" class="active">0分</a>
-      </li>
-      <li>
-        <a href="javascript:;" data-score="1">1分</a>
-      </li>
-      <li>
-        <a href="javascript:;" data-score="2">2分</a>
-      </li>
-    </ul>
+    <div class="item-click" data-score="0" data-type="商业模式和实施方案">
+      <input class="bubble-slider" name="score[]" type="number" min="0" max="25" value="0">
+    </div>
     
     <a href="javascript:;" class="item">
       <img src="img/grey_bg.png">
@@ -69,17 +65,31 @@
         <img src="img/arrow_down.png">
       </span>
     </a>
-    <ul class="item-click" data-score="0" data-type="行业及市场">
-      <li>
-        <a href="javascript:;" data-score="0" class="active">0分</a>
-      </li>
-      <li>
-        <a href="javascript:;" data-score="1">1分</a>
-      </li>
-      <li>
-        <a href="javascript:;" data-score="2">2分</a>
-      </li>
-    </ul>
+    <div class="item-click" data-score="0" data-type="行业及市场">
+      <input class="bubble-slider" name="score[]" type="number" min="0" max="5" value="0">
+    </div>
+
+    <a href="javascript:;" class="item">
+      <img src="img/grey_bg.png">
+      <span class="name">行业及市场</span>
+      <span class="arrow">
+        <img src="img/arrow_down.png">
+      </span>
+    </a>
+    <div class="item-click" data-score="0" data-type="行业及市场">
+      <input class="bubble-slider" name="score[]" type="number" min="0" max="5" value="0">
+    </div>
+
+    <a href="javascript:;" class="item">
+      <img src="img/grey_bg.png">
+      <span class="name">行业及市场</span>
+      <span class="arrow">
+        <img src="img/arrow_down.png">
+      </span>
+    </a>
+    <div class="item-click" data-score="0" data-type="行业及市场">
+      <input class="bubble-slider" name="score[]" type="number" min="0" max="5" value="0">
+    </div>
 
   </div>
 
