@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    border: 0;
+    vertical-align: middle;
+}
+
+body{
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+}
+
+.header{
+    width: 100%;
+}
+
+.header img{
+    width: 100%;
+}
+
+.table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.table tr td{
+    padding: 5px;
+}
+
+/* 偶数行 */
+.table tr:nth-child(even){
+    background-color: #e3e3e3;
+}
+
+.table tr:nth-child(even) .overlying{
+    background: rgba(255,255,255,.5);
+}
+
+/* 奇数行 */
+.table tr:nth-child(odd){
+    background-color: #f6f6f6;
+}
+
+.table tr:nth-child(odd) .overlying{
+    background: rgba(0,0,0,.1);
+}
+
+.table .bg-1{
+    color: #fff;
+    background-color: #0c1e48;
+}
+.table .bg-2{
+    color: #fff;
+    background-color: #f6ba18;
+}
+.table .bg-3,.table .bg-green{
+    color: #fff;
+    background-color: #94ac26;
+}
+.table .bg-4{
+    color: #fff;
+    background-color: #579e34;
+}
+
+.footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 17px;
+    background-color: #e3e3e3;
+    border-top: 1px solid #d3d3d3;
+}
+
+.footer .data-time{
+    position: fixed;
+    bottom: 17px;
+    right: 17px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
+  <title>红包雨</title>
+  <link rel="stylesheet" href="iconfont/iconfont.css">
+  <link rel="stylesheet" href="css/desktop.css">
+</head>
+
+<body>
+  <div class="rain-text">红包雨未开启</div>
+
+  <div class="rain packet p1">
+    <img src="img/packet.png">
+  </div>
+  <div class="rain packet p2">
+    <img src="img/packet.png">
+  </div>
+  <div class="rain packet p3">
+    <img src="img/packet.png">
+  </div>
+  <div class="rain packet p4">
+    <img src="img/packet.png">
+  </div>
+
+  <div class="click-result click-transform" style="display:none">
+    <div class="pic">
+      <img src="img/packet-empty.png">
+    </div>
+  </div>
+
+  <div class="click-result" style="display:none">
+    <div class="pic">
+      <img src="img/packet-empty.png">
+    </div>
+    <span class="text">恭喜您获得100元红包</span>
+    <div class="remove">
+      <a href="javascript:;" class="button">继续抢</a>
+    </div>
+  </div>
+
+  <input type="hidden" name="ajax-switch-url" value="/xy/redpacketrain/switch.php">
+  <input type="hidden" name="ajax-click-url" value="/xy/redpacketrain/click.php">
+  
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/rain.js"></script>
+
+  <!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>-->
+</body>
+
+</html>

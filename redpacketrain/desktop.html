@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
+  <title>首页</title>
+  <link rel="stylesheet" href="iconfont/iconfont.css">
+  <link rel="stylesheet" href="css/desktop.css">
+</head>
+
+<body>
+  <div class="menu-list">
+    <div class="menu">
+      <a href="#" class="title has-sub">
+        <i class="icon iconfont">&#xe606;</i>
+        <span class="name">互动</span>
+      </a>
+      <div class="sub-menu">
+        <a href="#" class="second">
+          <i class="icon iconfont">&#xe604;</i>
+          <span class="name">留言墙</span>
+        </a>
+        <a href="redrain.html" class="first">
+          <i class="icon iconfont">&#xe603;</i>
+          <span class="name">抢红包</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="menu">
+      <a href="#" class="title has-sub">
+        <i class="icon iconfont">&#xe600;</i>
+        <span class="name">查看会议</span>
+      </a>
+      <div class="sub-menu">
+        <a href="#" class="second">
+          <i class="icon iconfont">&#xe602;</i>
+          <span class="name">嘉宾</span>
+        </a>
+        <a href="#" class="first">
+          <i class="icon iconfont">&#xe601;</i>
+          <span class="name">详情</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="menu">
+      <a href="#" class="title">
+        <i class="icon iconfont">&#xe605;</i>
+        <span class="name">我</span>
+      </a>
+    </div>
+
+  </div>
+
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script>
+    $(function(){
+      $(".title.has-sub").click(function(){
+        var currentSubMenu = $(this).next('.sub-menu');
+        if(currentSubMenu.hasClass('active')){
+          currentSubMenu.removeClass('active').fadeToggle();
+        }else{
+          $('.sub-menu.active').removeClass('active').fadeToggle();            
+          currentSubMenu.addClass('active').fadeToggle();
+        }
+      });
+    });
+  </script>
+
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+
+</html>

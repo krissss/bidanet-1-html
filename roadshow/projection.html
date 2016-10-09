@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>路演项目</title>
+  <link rel="stylesheet" href="css/road-show-projection.css">
+</head>
+
+<body>
+  <div class="header">
+    <img src="img/projection-header.jpg">
+  </div>
+
+  <table class="table">
+    <tr>
+      <td>序号</td>
+      <td>项目名称</td>
+    </tr>
+    <tr>
+      <td class="overlying">1</td>
+      <td>阿斯达斯的</td>
+    </tr>
+    <tr>
+      <td class="overlying">2</td>
+      <td>阿斯达斯的2</td>
+    </tr>
+    <tr>
+      <td class="overlying">3</td>
+      <td>阿斯达斯的</td>
+    </tr>
+    <tr>
+      <td class="overlying">4</td>
+      <td>阿斯达斯的2</td>
+    </tr>
+    <tr>
+      <td class="overlying">5</td>
+      <td>阿斯达斯的</td>
+    </tr>
+    <tr>
+      <td class="overlying">6</td>
+      <td>阿斯达斯的2</td>
+    </tr>
+  </table>
+
+  <div class="footer-bottom"></div>
+  <div class="footer">
+    备注：去掉一个最高分和一个最低分，取平均值为最终得分。
+    <span class="data-time">数据更新时间：<span class="update-time">2016-10-21 00:00:00</span></span>
+  </div>
+
+  <input type="hidden" name="ajax-time" value="10">
+  <input type="hidden" name="ajax-url" value="/xy/roadshow/aa.php">
+  
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/road-show-projection.js"></script>
+
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+
+</html>

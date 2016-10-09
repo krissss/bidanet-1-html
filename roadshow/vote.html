@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>路演项目投票</title>
+  <link rel="stylesheet" href="css/sweetalert.css">
+  <link rel="stylesheet" href="css/road-show.css">
+</head>
+
+<body>
+  <div class="header">
+    <img src="img/blue_bg.png" class="blue-bg">
+    <div class="title">路演项目名称</div>
+    <img src="img/logo_small.png" class="logo-small">
+  </div>
+
+  <div class="list vote-list">
+    <a href="javascript:;" class="item">
+      <img src="img/grey_bg.png">
+      <span class="name">技术和产品</span>
+      <span class="arrow">
+        <img src="img/arrow_down.png">
+      </span>
+    </a>
+    <ul class="item-click" data-score="0" data-type="技术和产品">
+      <li>
+        <a href="javascript:;" data-score="0" class="active">0分</a>
+      </li>
+      <li>
+        <a href="javascript:;" data-score="1">1分</a>
+      </li>
+      <li>
+        <a href="javascript:;" data-score="2">2分</a>
+      </li>
+      <li>
+        <a href="javascript:;" data-score="3">3分</a>
+      </li>
+      <li>
+        <a href="javascript:;" data-score="4">4分</a>
+      </li>
+    </ul>
+
+    <a href="javascript:;" class="item">
+      <img src="img/grey_bg.png">
+      <span class="name">商业模式和实施方案</span>
+      <span class="arrow">
+        <img src="img/arrow_down.png">
+      </span>
+    </a>
+    <ul class="item-click" data-score="0" data-type="商业模式和实施方案">
+      <li>
+        <a href="javascript:;" data-score="0" class="active">0分</a>
+      </li>
+      <li>
+        <a href="javascript:;" data-score="1">1分</a>
+      </li>
+      <li>
+        <a href="javascript:;" data-score="2">2分</a>
+      </li>
+    </ul>
+    
+    <a href="javascript:;" class="item">
+      <img src="img/grey_bg.png">
+      <span class="name">行业及市场</span>
+      <span class="arrow">
+        <img src="img/arrow_down.png">
+      </span>
+    </a>
+    <ul class="item-click" data-score="0" data-type="行业及市场">
+      <li>
+        <a href="javascript:;" data-score="0" class="active">0分</a>
+      </li>
+      <li>
+        <a href="javascript:;" data-score="1">1分</a>
+      </li>
+      <li>
+        <a href="javascript:;" data-score="2">2分</a>
+      </li>
+    </ul>
+
+  </div>
+
+  <div class="vote-footer-bottom"></div>
+  <div class="vote-footer">
+    <div class="button-group">
+      <a class="button button-submit" href="javascript:;">提交</a>
+      <a class="button" href="javascript:history.go(-1)">返回</a>
+    </div>
+    <img src="img/blue_bg.png">
+    <span class="total-score-desc">总分：<span class="total-score">100</span></span>
+  </div>
+
+  <input type="hidden" name="project-id" value="1">
+  <input type="hidden" name="submit-url" value="/xy/roadshow/bb.php">
+
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/sweetalert.min.js"></script>
+  <script src="js/road-show.js"></script>
+
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+
+</html>
