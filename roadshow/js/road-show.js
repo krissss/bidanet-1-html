@@ -26,7 +26,7 @@ $(function(){
             }
             showData += type + ':' + v.score + "分\n";
         });
-        console.log(showData);
+        // console.log(showData);
         swal({
             title: '您即将提交的数据',
             text: showData,
@@ -42,7 +42,7 @@ $(function(){
                 url: submitUrl,
                 data: {projectId:projectId ,submitData:submitData},
                 success: function (successData) {
-                    console.log(successData);
+                    // console.log(successData);
                     swal(successData.data,'',successData.type);
                 },
                 dataType: 'json'
